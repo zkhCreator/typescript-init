@@ -18,3 +18,6 @@
 - 通过增加 launch.json 配置调试能力。
     - runtimeArgs 用于对于 node 的 params 参数设置
     - args 是传参数
+- 增加动态加载的能力
+    - 通过 `npm install -D nodemon` 引入 nodemon，这里不调用 `@types/nodemon` 是因为这个命令我们是用于外部调用，不需要在代码中进行调用。
+    - 通过 `nodemon.json` 来配置 `nodemond` 需要监听的位置，以及需要执行的命令
