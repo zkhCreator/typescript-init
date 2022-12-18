@@ -4,3 +4,4 @@
 > 同时在下面写下所有的操作步骤
 
 - `npm init` 创建工程
+- `npm install -D typescript` 以 devDependency 的方式安装 typscript，不会在打包后的产物中依赖。只是服务于 coding
