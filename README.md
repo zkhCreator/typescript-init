@@ -10,3 +10,4 @@
 - 在 `tsconfig.json` 中增加 exclude，即 typescript 不编译 的文件
     - 在 `tsconfig.json` 中的编译配置优先级为 `files > exclude > include`
 - 创建 `src` 文件路径，并在 `src` 路径下创建 ts 工程文件 `index.ts`
+- 安装 `npm install -D @types/node`，安装 `@types/node` 创建 node 的 typescript 版本，方便类型依赖。
