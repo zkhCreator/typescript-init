@@ -15,3 +15,6 @@
     - `npx ts-node index.ts` 通过 npx 来执行 typescript 的调用
     - 针对不同环境可以通过 `npx ts-node --project tsconfig.json src/index.ts` 来根据不同的 `tsconfig.json` 配置进行执行
     - `tsconfig.json` 中的 `rootDir` 不执行 ts-node 的执行路径，仅影响 `tsc` 编译的路径
+- 通过增加 launch.json 配置调试能力。
+    - runtimeArgs 用于对于 node 的 params 参数设置
+    - args 是传参数
