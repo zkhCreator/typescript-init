@@ -11,3 +11,7 @@
     - 在 `tsconfig.json` 中的编译配置优先级为 `files > exclude > include`
 - 创建 `src` 文件路径，并在 `src` 路径下创建 ts 工程文件 `index.ts`
 - 安装 `npm install -D @types/node`，安装 `@types/node` 创建 node 的 typescript 版本，方便类型依赖。
+- `npm install -D ts-node` 安装 ts-node，用于运行 ts 编译 + 执行。类似于服务端能正常跑 node 服务
+    - `npx ts-node index.ts` 通过 npx 来执行 typescript 的调用
+    - 针对不同环境可以通过 `npx ts-node --project tsconfig.json src/index.ts` 来根据不同的 `tsconfig.json` 配置进行执行
+    - `tsconfig.json` 中的 `rootDir` 不执行 ts-node 的执行路径，仅影响 `tsc` 编译的路径
