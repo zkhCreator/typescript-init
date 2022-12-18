@@ -21,3 +21,9 @@
 - 增加动态加载的能力
     - 通过 `npm install -D nodemon` 引入 nodemon，这里不调用 `@types/nodemon` 是因为这个命令我们是用于外部调用，不需要在代码中进行调用。
     - 通过 `nodemon.json` 来配置 `nodemond` 需要监听的位置，以及需要执行的命令
+- 增加路径定制能力，比如说在代码中使用 `import * as Test from '@/utils/utils'`
+    - 在 `tsconfig.json` 中增加 `"compilerOptions.baseUrl": "src"`，这个用于设置引用文件的时候的根路径
+    - 在 `tsconfig.json` 的 `compilerOptions.paths: { "@/*": ["./*"]}` 来匹配使用相对路径
+    - 注意：这里的 `paths` 中的 key 必须是 `@/*`，如果是 `@`，则无法匹配路径
+    - 使用 `npm install -D tsconfig-paths` 安装 `tsconfig-paths`。
+    - 在 `nodemon.json` 中修改 `exec` 为 `ts-node -r tsconfig-path/register index.ts` 从而支持路径索引

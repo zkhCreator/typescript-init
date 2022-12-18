@@ -1,4 +1,4 @@
-import { plus } from "./utils"
+import { plus } from "@utils/utils"
 
 const value = 4
 const value2 = 5

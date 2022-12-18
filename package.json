@@ -4,8 +4,7 @@
   "description": "> 由于对于 TS 的初始化以及配置不是很熟悉，从0开始每一步执行对应的配置，每一步执行完成后以 git 的方式提交，并通过 commit 执行的方案。 > 同时在下面写下所有的操作步骤",
   "scripts": {
     "dev": "npx nodemon",
-    "start": "ts-node src/index.ts",
-    "test": "npx ts-node src/index.ts"
+    "start": "ts-node src/index.ts"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +12,7 @@
     "@types/node": "^18.11.17",
     "nodemon": "^1.19.2",
     "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.1",
     "typescript": "^4.9.4"
   }
 }
