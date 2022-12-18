@@ -5,3 +5,5 @@
 
 - `npm init` 创建工程
 - `npm install -D typescript` 以 devDependency 的方式安装 typscript，不会在打包后的产物中依赖。只是服务于 coding
+- `npx tsc --init` 其中 tsc 为 typescirpt 的缩写
+    - `npx` 为 `node` 内置命令，可以执行已经安装好的命令
