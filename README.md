@@ -8,3 +8,5 @@
 - `npx tsc --init` 其中 tsc 为 typescirpt 的缩写
     - `npx` 为 `node` 内置命令，可以执行已经安装好的命令
 - 在 `tsconfig.json` 中增加 exclude，即 typescript 不编译 的文件
+    - 在 `tsconfig.json` 中的编译配置优先级为 `files > exclude > include`
+- 创建 `src` 文件路径，并在 `src` 路径下创建 ts 工程文件 `index.ts`
